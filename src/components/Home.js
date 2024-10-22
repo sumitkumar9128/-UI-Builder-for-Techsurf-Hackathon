@@ -6,7 +6,7 @@ const Home = () => {
   const [homeData, setHomeData] = useState(null);
 
   useEffect(() => {
-    const Query = Stack.ContentType('home_page').Entry('bltc8955e24b6951d33');
+    const Query = Stack.ContentType('home_page').Entry(''); // removed
     Query.fetch()
       .then((result) => {
         setHomeData(result.toJSON());

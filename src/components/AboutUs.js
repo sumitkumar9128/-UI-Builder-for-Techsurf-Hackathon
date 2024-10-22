@@ -5,7 +5,7 @@ const AboutUs = () => {
   const [aboutData, setAboutData] = useState(null);
 
   useEffect(() => {
-    const Query = Stack.ContentType('about_us').Entry('blt50f9172bcecac511');
+    const Query = Stack.ContentType('about_us').Entry(''); //removed
     Query.fetch()
       .then((result) => {
         setAboutData(result.toJSON());
